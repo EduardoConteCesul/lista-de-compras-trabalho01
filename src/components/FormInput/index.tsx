@@ -1,6 +1,5 @@
-import { Text, TextInput, TouchableOpacity, View } from "react-native";
+import { Image, TextInput, TouchableOpacity, View } from "react-native";
 import { styles } from "./styles";
-// import imageTrash from "../../../assets/trash.png"
 
 interface PropsFormInput {
   placeHolder: string,
@@ -14,7 +13,7 @@ export function FormInput(props: PropsFormInput) {
         placeholder={props.placeHolder}
       />
       <TouchableOpacity style={styles.button}>
-        <Text>+</Text>
+        <Image source={require('../../../assets/trash.png')} />
       </TouchableOpacity>
     </View>
   )

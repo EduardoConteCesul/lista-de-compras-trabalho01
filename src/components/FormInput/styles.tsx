@@ -2,15 +2,17 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   container: {
+    flexWrap: "nowrap",
     position: "relative",
-    paddingLeft: 24,
-    paddingRight: 24,
     flexDirection: "row",
-    gap: 4
-  },
+    gap: 4,
+    alignItems: "center",
+    borderStyle: "solid"
+  },    
   textInput: {
+    flex: 1,
     backgroundColor: "#F2F2F2",
-    width: 289,
+    height: 54,
     padding: 16,
     borderColor: "#808080",
     borderWidth: 1,
@@ -25,7 +27,7 @@ export const styles = StyleSheet.create({
     height: 52,
     width: 52,
     borderRadius: 8,
-    padding: 18,
+    justifyContent: "center",
     alignItems: "center",
   }
 })

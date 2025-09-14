@@ -8,15 +8,12 @@ export const styles = StyleSheet.create({
   box: {
     flex: 1,
     marginTop: -27,
-    borderColor: "#1c19dd",
-    borderWidth: 1
+    paddingLeft: 24,
+    paddingRight: 24
   },
   textBoxFlatList: {
     marginTop: 57,
-    paddingLeft: 24,
-    paddingRight: 24,
-    justifyContent: "space-between",
-    flexDirection: "row"
+    flexDirection: "column"
   },
   textProducts: {
     color: "#31C667",
@@ -43,5 +40,40 @@ export const styles = StyleSheet.create({
     paddingRight: 8,
     paddingTop: 2, 
     paddingBottom: 2, 
-  }
+  },
+  list: {
+    flexGrow: 1,
+  },
+  containerTextBox: {
+    justifyContent: "space-between",
+    flexDirection: "row"
+  },
+  containerFlatList: {
+    marginTop: 20,
+    borderTopColor: "#D9D9D9",
+    borderTopWidth: 1
+  },
+  textList: {
+    flex: 1,
+    alignItems: "center",
+    paddingTop: 48,
+    paddingBottom: 48,
+    paddingLeft: 20,
+    paddingRight: 20 
+  },
+  textFlatListPrimary: {
+    color: "#808080",
+    fontSize: 14,
+    fontWeight: 700,
+    lineHeight: 19.6,
+    marginTop: 16,
+    
+  },
+  textFlatListSecundary: {
+    color: "#808080",
+    fontSize: 14,
+    fontWeight: 400,
+    lineHeight: 19.6,
+  },
+  
 })
