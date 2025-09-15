@@ -3,17 +3,22 @@ import { styles } from "./styles";
 
 interface PropsFormInput {
   placeHolder: string,
+  value: string
+  onChangeText: (text: string) => void,
+  onPress: () => void,
 }
 
-export function FormInput(props: PropsFormInput) {
+export function FormInput({ placeHolder, onChangeText, onPress, value }: PropsFormInput) {
   return (
     <View style={styles.container}>
       <TextInput
         style={styles.textInput}
-        placeholder={props.placeHolder}
+        placeholder={placeHolder}
+        onChangeText={onChangeText}
+        value={value}
       />
-      <TouchableOpacity style={styles.button}>
-        <Image source={require('../../../assets/trash.png')} />
+      <TouchableOpacity style={styles.button} onPress={onPress}>
+        <Image source={require('../../../assets/plus.png')} />
       </TouchableOpacity>
     </View>
   )

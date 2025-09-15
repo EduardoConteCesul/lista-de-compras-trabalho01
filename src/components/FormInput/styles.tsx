@@ -2,12 +2,9 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   container: {
-    flexWrap: "nowrap",
     position: "relative",
     flexDirection: "row",
     gap: 4,
-    alignItems: "center",
-    borderStyle: "solid"
   },    
   textInput: {
     flex: 1,
